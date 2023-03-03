@@ -24,9 +24,7 @@
   SOFTWARE.
 
 */
-#if defined(_WIN32)
-#include <windows.h>
-#elif defined(__GNU_LIBRARY__)
+#if defined(__GNU_LIBRARY__)
 #define _POSIX_C_SOURCE 200809L
 #endif
 #include "toml.h"
